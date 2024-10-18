@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Sai Danda's MAPD Portfolio">
+    <title>Sri Sai Danda - MAPD Portfolio</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f1f8;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #cee429;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+        }
+        .profile {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile p {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+        section {
+            margin: 50px 0;
+        }
+        .projects, .skills {
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .project, .skill {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 0 0 300px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .project:hover, .skill:hover {
+            transform: translateY(-5px);
+        }
+        .project h3, .skill h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        .project p, .skill p {
+            font-size: 1rem;
+            color: #34495e;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1a659e;
+        }
+        footer {
+            background-color: #caca23;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 60px;
+        }
+        .contact {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .contact div {
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sri Sai Danda's Portfolio</h1>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="container">
+        <section class="profile text-center my-5">
+            <h2>Introduction</h2>
+            <p>
+                Hello, I am Sri Sai Danda, A passionate and driven mobile application developer. Throughout the Mobile Application Develpment course at Cambrian college, I have gained hands-on experience in building dynamic and user-friendly mobile applications for both Android and iOS platforms. My focus has been on delivering seamless user experiences by leveraging my skills in Kotlin, Java and cross-platform frameworks like Flutter and  React Native.
+
+                This portfolio showcases a collection of my projects that highlight my understanding of the entire mobile app development lifecycle, from initial concept to deployment. I have learned and improved my skills while working on the assignments and projects assigned Throughout this course. Feel free to explore my work.               
+            </p>
+           
+        </section>
+
+        <!-- Capstone Project Section -->
+        <section class="projects">
+            <h2>Capstone Project</h2>
+            <div class="project">
+                <h3>Home Design App</h3>
+                <p>The Home Design App is an Android application that allows users to explore, purchase, and visualize furniture in their homes using Augmented Reality (AR) technology. The app provides users with a rich experience by integrating Firebase for authentication, Firestore for real-time data management, and AR for immersive furniture placement.</p>
+                <button onclick="toggleDetails('capstone')">Show More</button>
+                <p id="capstone" class="hidden">
+                    <strong>Objective:</strong> To create a comprehensive home design solution where users can explore and visualize furniture in their own spaces using AR.<br>
+                    <strong>Skills Demonstrated:</strong> Android development (Kotlin), Firebase integration, Firestore real-time database, Augmented Reality (AR), and UI/UX design.<br>
+                    <strong>Challenges:</strong> Managing real-time data updates for multiple users and implementing smooth AR functionality were significant challenges, solved using Firebase's real-time capabilities and ARCore integration.<br>
+                    <strong>Significance:</strong> This project demonstrates my expertise in building a feature-rich Android application with real-time data and augmented reality, culminating my learning in the Mobile Application Development (MAPD) program.
+                </p>
+            </div>
+        </section>
+
+        <!-- Semester Projects Section -->
+        <section class="projects">
+            <h2>Other Projects</h2>
+            <div class="project">
+                <h3>Habit Tracker App</h3>
+                <p>The Habit Tracker App is a mobile application designed to help users develop and maintain healthy habits by tracking daily routines and providing insights into their progress. It is a tool that encourages users to stay consistent with their goals, whether it’s fitness, learning, self-care, or productivity-related habits.</p>
+                <button onclick="toggleDetails('project3')">Show More</button>
+                <p id="project3" class="hidden">
+                    <strong>Objective:</strong> To assist users in tracking habits and improving behavior over time.<br>
+                    <strong>Skills Demonstrated:</strong> PowerApps logic, data integration, and cloud storage.<br>
+                    <strong>Challenges:</strong> Custom visual progress indicators were developed for tracking daily activities.<br>
+                    <strong>Significance:</strong> Shows my ability to work with low-code development environments like PowerApps to create impactful tools.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills Gained</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Java Script</h3>
+                    <h3>C#</h3>
+                    <h3>UI/UX Design</h3>
+                    <h3>Kotlin</h3>    
+                </div> 
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <div>
+                <p>Email: <a href="mailto:dandasrisai@gmail.com">dandasrisai@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/srisaiDanda" target="_blank">https://github.com/Srisai5381</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Thank you,  Sri Sai Danda</p>
+    </footer>
+
+    <!-- Toggle Details Script -->
+    <script>
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
